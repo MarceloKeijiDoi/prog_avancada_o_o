@@ -10,7 +10,7 @@ export class CursoCadastroComponent {
 @Output() cursoAdicionado = new EventEmitter();
 
 adicionar (nome){
-  const curso = {curso:nome};
+  const curso = {nome:nome};
   this.cursoAdicionado.emit(curso);
 
 }
