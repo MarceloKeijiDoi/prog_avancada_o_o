@@ -6,6 +6,7 @@ import {FatecIpiCursosComponent} from './fatec-ipi-cursos/fatec-ipi-cursos.compo
 import { FatecIpiCursosCliComponent } from './fatec-ipi-cursos-cli/fatec-ipi-cursos-cli.component';
 import { CursoCartaoComponent } from './curso-cartao/curso-cartao.component';
 import { CursoCadastroComponent } from './curso-cadastro/curso-cadastro.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,7 @@ import { CursoCadastroComponent } from './curso-cadastro/curso-cadastro.componen
     FatecIpiCursosCliComponent,
     CursoCartaoComponent,
     CursoCadastroComponent
-  ],
+     ],
   imports: [
     BrowserModule
   ],

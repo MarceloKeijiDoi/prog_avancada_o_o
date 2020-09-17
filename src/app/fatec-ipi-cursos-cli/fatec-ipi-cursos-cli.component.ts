@@ -7,8 +7,6 @@ import { Component} from '@angular/core';
 })
 export class FatecIpiCursosCliComponent {
 
-  textoBotao: string = 'Adicionar';
-  esconder: boolean = false;
 
   cursos = [
     {nome: 'Análize e Desenvolvimento de Sistemas'},
@@ -16,19 +14,19 @@ export class FatecIpiCursosCliComponent {
     {nome:'Gestão Empresarial'},
     {nome:'Recursos Humanos'},
     {nome:'Gestão Comercial'},
-  ]
+    {nome:'Fisica'}
+  ];
 
-  adicionar(n: string){
-    this.cursos.push({nome: n});
-  }
+ // adicionar(n: string){
+   // this.cursos.push({nome: n});
+  //}
 
   onAdicionarCurso(curso){
     this.cursos = [curso,...this.cursos];
+    console.log(curso);
+
   }
-  alterarExibicao (): void{
-    this.textoBotao = this.esconder ? 'Exibir':'Esconder';
-    this.esconder = !this.esconder;
-  }
+
   }
 
 
