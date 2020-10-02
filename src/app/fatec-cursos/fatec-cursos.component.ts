@@ -1,11 +1,11 @@
 import { Component} from '@angular/core';
 
 @Component({
-  selector: 'app-fatec-ipi-cursos-cli',
-  templateUrl: './fatec-ipi-cursos-cli.component.html',
-  styleUrls: ['./fatec-ipi-cursos-cli.component.css']
+  selector: 'app-fatec-cursos',
+  templateUrl: './fatec-cursos.component.html',
+  styleUrls: ['./fatec-cursos.component.css']
 })
-export class FatecIpiCursosCliComponent {
+export class FatecCursosComponent {
 
 
   cursos = [
@@ -17,16 +17,12 @@ export class FatecIpiCursosCliComponent {
     {nome:'Fisica'}
   ];
 
- // adicionar(n: string){
-   // this.cursos.push({nome: n});
-  //}
+ /* adicionar(n: string){
+    this.cursos.push({nome: n});
+  }*/
 
   onAdicionarCurso(curso){
     this.cursos = [curso,...this.cursos];
     console.log(curso);
-
-  }
-
-  }
-
-
+}
+}

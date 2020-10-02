@@ -1,12 +1,14 @@
 <div class="row">
   <div class="form-group col-md-12">
     <label for="nomeInput">CURSO</label>
-    <input type="text" class="form-control" id="nomeInupt" #nomeInput>
+    <input type="text" class="form-control" id="nomeInupt" #nomeInput appSombraNoLogo>
   </div>
 </div>
-
 <div class="row">
-  <button class="btn btn-primary btn-block mt-3" (click)="adicionar(nomeInput.value)">
+  <button [ngStyle]="obterEstilosParaOBotao()" class="btn btn-primary btn-block mt-3" (click)="adicionar(nomeInput.value)"(click)="gerarValor()">
   CADASTRAR
   </button>
+  <footer  [ngClass]="obterClassesRodape()">
+    Angular. 2020. Google Inc.
+    </footer>
 </div>

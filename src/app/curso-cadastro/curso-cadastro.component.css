@@ -1,0 +1,23 @@
+.principal {
+  width: 1280px;
+  margin: auto;
+  text-align: center;
+  }
+.rodape_par {
+  text-decoration-color: chartreuse;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 8px;
+  margin-top: 12px;
+  width: 100%;
+  display: inline-block;
+  }
+.rodape_impar {
+  text-decoration: darkorchid;
+    border-top: 1px solid #805acb;
+    border-bottom: 1px solid #805abb;
+    padding: 8px;
+    margin-top: 12px;
+    width: 150%;
+    display: inline-block;
+    }

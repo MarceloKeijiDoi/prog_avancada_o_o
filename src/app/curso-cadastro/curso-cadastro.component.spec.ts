@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatecIpiCursosCliComponent } from './fatec-ipi-cursos-cli.component';
+import { CursoCadastroComponent } from './curso-cadastro.component';
 
-describe('FatecIpiCursosCliComponent', () => {
-  let component: FatecIpiCursosCliComponent;
-  let fixture: ComponentFixture<FatecIpiCursosCliComponent>;
+describe('CursoCadastroComponent', () => {
+  let component: CursoCadastroComponent;
+  let fixture: ComponentFixture<CursoCadastroComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatecIpiCursosCliComponent ]
+      declarations: [ CursoCadastroComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FatecIpiCursosCliComponent);
+    fixture = TestBed.createComponent(CursoCadastroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

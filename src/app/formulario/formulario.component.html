@@ -1,0 +1,50 @@
+<div class="principal">
+  <div class="container">
+    <form #alunoForm="ngForm" (ngSubmit)="salvar(alunoForm)">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="nomeInput">Nome</label>
+            <input name="nome" id="nomeInput" #nomeInput type="text" placeholder="nome" class="form-control p-4" ngModel>
+        </div>
+      </div>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="idadeInput">Idade</label>
+          <input name="idade" id = "idadeInput" #idadeInput type="text" placeholder="idade" class="form-control p-4" ngModel>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="emailInput">Email</label>
+        <input name="email" id="emailInput" #emailInput type="text" placeholder="email" class="form-control p-4" ngModel>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cursoInput">Profissão</label>
+        <select name="curso" id="cursoInput" #cursoInput class="form-control" ngModel>
+         <option value="">Selecione</option>
+         <option *ngFor="let c of cursos">{{c}}</option>
+        </select>
+      </div>
+    </div>
+    </form>
+    <div class="row col-12">
+      <button type="submit" class="btn btn-primary btn-block" (click)="adicionarMatricula(nomeInput.value
+      ,idadeInput.value,emailInput.value,cursoInput.value)">
+       Matricular
+      </button>
+     </div>
+    <div class="row">
+     <div class="card col-4 p-0 m-2" *ngFor="let m of matriculas">
+          <div class="card-header">
+          Matricula
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+             <p>Nome:{{m.nome}}</p>
+             <p>Idade:{{m.idade}}</p>
+             <p>Email: {{m.email}}</p>
+             <p>Curso: {{m.curso}}</p>
+
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
