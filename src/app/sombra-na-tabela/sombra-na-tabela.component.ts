@@ -17,7 +17,6 @@ private renderer: Renderer2
    )
  };
 
-
  @HostListener('mouseleave')quandoMouseSair(){
    this.renderer.removeStyle(
      this.elementRef.nativeElement, 'box-shadow'
