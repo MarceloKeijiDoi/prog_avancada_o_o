@@ -10,7 +10,7 @@ export class SombraNoLogoDirective {
     ) {
       this.renderer.setStyle(
         this.elementRef.nativeElement,
-        'box-shadow', '10px 10px #805acb'
+        'box-shadow', '10px 10px '
         )
      }
 
