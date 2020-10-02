@@ -7,8 +7,6 @@ constructor(
 private elementRef: ElementRef,
 private renderer: Renderer2
 ) {
-
-
  }
  @HostListener('mouseover')quandoOMousePassarPorCima(){
    this.renderer.setStyle(
